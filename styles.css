@@ -1,0 +1,329 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: black;
+}
+
+header {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-texto h1 {
+  margin: 0;
+  color: #028146;
+  font-size: 1.6rem;
+}
+
+.logo-texto p {
+  margin: 0;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+#menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: #028146;
+}
+
+#botonMenu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+
+
+/* SECCIONES */
+.seccion {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.fondoGris {
+  background-color: #ebebeb;
+}
+
+
+
+/* PRESENTACIONES */
+.presentacion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.textoPresentacion {
+  max-width: 500px;
+  text-align: left;
+}
+
+
+
+/* QUÉ ES OIL */
+.imagenPrincipal {
+  width: 450px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+}
+
+
+
+/* PRODUCTO */
+.botonComprar {
+  background: #00a37a;
+  color: white;
+  display: grid;
+  padding: 10px 20px;
+  border: none;
+  margin: 0 auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.botonComprar:hover {
+  background: #028146;
+}
+
+
+
+/* QUIÉNES SOMOS */
+.imagenQuienesSomos, .imagenProducto {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+}
+
+
+
+/* VALORES */
+.valores {
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.valores li {
+  margin: 15px 0px;
+  position: relative;
+  padding-left: 15px;
+}
+
+.valores li::before {
+  content: "•";
+  color: #00a37a;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+
+/* FOOTER */
+footer {
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+footer a {
+  color: #00a37a;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* MISIÓN Y VISIÓN */
+.contenedorMisionVision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+.textoMisionVision {
+  text-align: left;
+  max-width: 800px;
+}
+
+.textoMisionVision h2 {
+  color: #00a37a;
+  margin-bottom: 20px;
+}
+
+.imagenMisionVision {
+  width: 500px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+}
+
+
+
+/* FORMULARIO DE CONTACTO */
+#contacto{
+  padding: 104px;
+}
+
+#contactForm{
+  padding-right: 22px;
+}
+
+.formulario-contacto {
+  border: 1px solid black;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ebebeb;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.formulario-contacto label {
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.formulario-contacto input{
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.formulario-contacto #mensaje{
+  height: 2.5rem;
+}
+
+.formulario-contacto button {
+  display: block;
+  background-color: #00a37a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.formulario-contacto button:hover {
+  background-color: #008c62;
+}
+
+
+
+/* DISEÑO RESPONSIVE */
+@media (max-width: 768px) {
+
+  section, .seccion {
+    padding: 80px 20px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1, h2 {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  #botonMenu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 9999;
+  }
+
+  #botonMenu i {
+    color: white;
+  }
+
+  .imagenProducto, .imagenPrincipal, .imagenNosotros {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  #menu ul {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 9999;
+  }
+
+  #menu ul.mostrar {
+    display: flex;
+  }
+
+  .redes{
+    text-align: center;
+  }
+
+  .botonComprar{
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .logo-texto h1{
+    text-align: left;
+  }
+}
